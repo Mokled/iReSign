@@ -383,7 +383,7 @@ static NSString *kiTunesMetadataFileName            = @"iTunesMetadata";
 
         NSPipe *pipe=[NSPipe pipe];
         [generateEntitlementsTask setStandardOutput:pipe];
-        [generateEntitlementsTask setStandardError:pipe];
+//        [generateEntitlementsTask setStandardError:pipe];
         NSFileHandle *handle = [pipe fileHandleForReading];
 
         [generateEntitlementsTask launch];
